@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <h1 id="mes">Key board Event</h1>
+
+<script>
+    var m = document.getElementById("mes")
+    var k;
+    var s = new Audio("audio/key1.mp3")
+    function f1(event)
+    {
+        event.preventDefault()
+        k = event.keyCode
+        m.innerHTML= "Code = "+ k+ " Charecter = "+ event.key
+        document.title = "key Code ="+k
+
+            switch(event.key)
+                    {
+                        case "A" :
+                        
+                        s.src = "audio/key1.mp3";s.play()
+                        document.bgColor ="red"
+                        break;
+
+                        case "B" :
+                        
+                        s.src = "audio/key2.mp3";s.play()
+                        document.bgColor ="yellow"
+                        break;
+
+                        case "C" :
+                        
+                        s.src = "audio/key3.mp3";s.play()
+                        document.bgColor ="green"
+                        break;
+
+                        case "D" :
+                        
+                        s.src = "audio/key4.mp3";s.play()
+                        document.bgColor ="pink"
+                        break;
+
+                        case "E" :
+                        
+                        s.src = "audio/key5.mp3";s.play()
+                        document.bgColor ="blue"
+                        break;
+
+                        case "F" :
+                        
+                        s.src = "audio/key6.mp3";s.play()
+                        document.bgColor ="red"
+                        break;
+
+                        case "G" :
+                        
+                        s.src = "audio/key7.mp3";s.play()
+                        document.bgColor ="yellow"
+                        break;
+
+                        case "H" :
+                        
+                        s.src = "audio/key8.mp3";s.play()
+                        document.bgColor ="green"
+                        break;
+
+                        case "I" :
+                        
+                        s.src = "audio/key9.mp3";s.play()
+                        document.bgColor ="pink"
+                        break;
+
+                        case "J" :
+                        
+                        s.src = "audio/key10.mp3";s.play()
+                        document.bgColor ="yellow"
+                        break;
+
+                        case "K" :
+                        
+                        s.src = "audio/key11.mp3";s.play()
+                        document.bgColor ="red"
+                        break;
+
+                        case "L" :
+                        
+                        s.src = "audio/key12.mp3";s.play()
+                        document.bgColor ="yellow"
+                        break;
+
+                        case "M" :
+                        
+                        s.src = "audio/key13.mp3";s.play()
+                        document.bgColor ="pink"
+                        break;
+
+                        case "N" :
+                        
+                        s.src = "audio/key14.mp3";s.play()
+                        document.bgColor ="green"
+                        break;
+
+                        case "O" :
+                        
+                        s.src = "audio/key15.mp3";s.play()
+                        document.bgColor ="blue"
+                        break;
+
+                        case "P" :
+                        
+                        s.src = "audio/key16.mp3";s.play()
+                        document.bgColor ="yellow"
+                        break;
+
+                        case "Q" :
+                        
+                        s.src = "audio/key17.mp3";s.play()
+                        document.bgColor ="red"
+                        break;
+
+                        case "R" :
+                        
+                        s.src = "audio/key18.mp3";s.play()
+                        document.bgColor ="green"
+                        break;
+
+                        case "S" :
+                        
+                        s.src = "audio/key19.mp3";s.play()
+                        document.bgColor ="bule"
+                        break;
+
+                        case "T" :
+                        
+                        s.src = "audio/key20.mp3";s.play()
+                        document.bgColor ="pink"
+                        break;
+
+                        case "U" :
+                        
+                        s.src = "audio/key21.mp3";s.play()
+                        document.bgColor ="yellow"
+                        break;
+
+                        case "V" :
+                        
+                        s.src = "audio/key22.mp3";s.play()
+                        document.bgColor ="red"
+                        break;
+
+                        case "W" :
+                        
+                        s.src = "audio/key23.mp3";s.play()
+                        document.bgColor ="pink"
+                        break;
+
+                        case "X" :
+                        
+                        s.src = "audio/key24.mp3";s.play()
+                        document.bgColor ="green"
+                        break;
+
+                        case "Y" :
+                        
+                        s.src = "audio/key25.mp3";s.play()
+                        document.bgColor ="yellow"
+                        break;
+
+                        case "Z" :
+                        
+                        s.src = "audio/key26.mp3";s.play()
+                        document.bgColor ="red"
+                        break;
+                    }
+    }
+
+document.body.addEventListener("keypress",f1)
+
+
+    
+</script>
+</body>
+</html>

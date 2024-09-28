@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-slider</title>
+</head>
+<style>
+
+#image
+{
+width: 600%;
+height: 800px;
+background-color rgb(40, 223, 16);
+transition: 2s;
+}
+
+.pic
+{
+width:16.3%;
+height: 800px;
+margin-left: 15px;
+padding: 10px;
+position: relative;
+
+}
+
+#mybutton
+{
+color: blue;
+position: relative;
+top: -300px;
+
+}
+
+#b1{margin-left: 6%;cursor: pointer;}
+
+#b2{margin-left: 84%;cursor: pointer;}
+
+
+</style>
+
+
+<body>
+<div id="image">
+
+<img class="pic" src="image/s1.jpg">
+<img class="pic" src="image/s2.jpg">
+<img class="pic" src="image/s3.jpg">
+<img class="pic" src="image/s4.jpg">
+<img class="pic" src="image/s5.jpg">
+<img class="pic" src="image/s6.jpg">
+</div>
+
+<div id="mybutton">
+
+<button id="b1">Next</button>
+<button id="b2">Back</button>
+
+</div>
+
+
+<script>
+
+var b1 = document.getElementById("b1")
+var b2 = document.getElementById("b2")
+var image = document.getElementById("image")
+
+var c = 0
+
+var t1;
+
+
+function Next()
+{
+if(c<500)
+
+{
+
+c=c+100
+
+image.style.marginLeft=-c+"%"
+
+}
+setTimeout("slide()",20000)
+
+document.title = c
+}
+
+
+function Back()
+{
+        if(c>0)
+            {
+            c=c-100
+            
+            image.style.marginLeft=-c+"%"
+ 
+            }
+
+        document.title = c
+}
+
+document.title="hello"
+
+
+b1.addEventListener("click",Next)
+b2.addEventListener("click",Back)
+
+
+
+</script>
+
+
+
+</body>
+</html>

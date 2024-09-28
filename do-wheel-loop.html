@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+const myname = ["azad","manjeet","kushal","jishan","manish","ravi"]
+
+var barlength = 0
+
+for(var i=0; i<myname.length; i++)
+
+{
+
+barlength= Math.round(Math.random()*50)
+
+document.write(`<h1>${myname[i]}</h1>`)
+
+
+document.write(`<div style='padding:25px; background:teal; border-radius:25px; width:${barlength}%;
+background:${myname[i]}'>  ${barlength}%         </div>`)
+
+
+
+}
+
+
+
+
+    </script>
+</body>
+</html>
