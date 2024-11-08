@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide-Up.Down</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+#name
+{
+    width: 15%;
+    height: 25px;
+    background-color: rgb(4, 167, 167);
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    cursor: pointer;
+}
+
+#cname
+{
+    width: 15%;
+    height: 640px;
+    background-color: rgb(48, 201, 228);
+    font-size: 29px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 10px 10px 10px gray;
+ 
+}
+
+#cname ol li {
+
+    list-style: none;
+    padding: 15px;
+    border-bottom: 4px rgb(255, 255, 255) ridge;
+    text-align: center;
+}
+
+#cname ol li a{color: white; text-decoration: none;}
+
+#cname ol lo a{color: white; text-decoration: none;}
+
+#cname li:hover{background-color: rgba(6, 157, 157, 0.736)}
+
+
+</style>
+<body>
+    
+    <h1 style="background-color: rgb(0, 191, 255); color: white; padding: 15px;">Welcome to my web page</h1>
+    
+
+<div id="name">Country name</div>
+<div id="cname">
+<ol>
+
+    <li><a href="">India</a></li>
+    <li><a href="">Pakistan</a></li>
+    <li><a href="">China</a></li>
+    <li><a href="">Japan</a></li>
+    <li><a href="">USA</a></li>
+    <li><a href="">America</a></li>
+    <li><a href="">Pakistan</a></li>
+    <li><a href="">Bhutan</a></li>
+    <li><a href="">Dubai</a></li>
+
+</ol>
+</div>
+
+
+<script>
+
+
+
+$(document).ready(function()
+{
+
+    $("#name").click(function()
+{
+
+    $("#cname").slideToggle(400);
+
+});
+
+});
+
+function f1()
+{
+
+    document.title="ready"
+    document.bgColor="black"
+}
+
+
+
+</script>
+    
+</body>
+</html>

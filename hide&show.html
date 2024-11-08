@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<style>
+
+#text
+{
+width: 40%;
+height: 210px;
+background-color: rgb(14, 134, 66);
+padding: 20px;
+border: 2px black solid;
+color: white;
+font-size: 18px;
+text-align: center;
+}
+
+
+#hidebtn
+{
+width: 4%;
+height: 21px;
+margin-top: 12px;
+}
+
+#showbtn
+{
+width: 4%;
+height: 21px;
+margin-top: 12px;
+margin-left: 12px;
+
+}
+
+
+</style>
+<body bgcolor="cyan">
+    <h1 >Jquery Hide & show</h1>
+
+    <div id="text">
+        <h1 style="color: white; text-align: center;">Text Box</h1>
+<p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum perferendis optio obcaecati ratione ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum perferendis optio obcaecati ratione porro porro consectetur. Quos iste atque vel quidem, voluptatum aspernatur vitae cupiditate. Officia nemo praesentium assumenda aspernatur.</p>
+
+    </div>
+
+    <button id="hidebtn">hide</button>
+    <button id="showbtn">show</button>
+
+
+    <script>
+
+$("#hidebtn").click(function()
+{
+$("#pera ").hide(3000);
+
+});
+
+
+
+$("#showbtn").click(function()
+{
+$("#pera ").show(2000);
+
+});
+
+
+    </script>
+</body>
+</html>
