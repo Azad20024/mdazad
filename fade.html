@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fade  </title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+<style>
+#card
+{
+width: 30%;
+height: 710px;
+background-color: rgb(207, 208, 201);
+padding: 25px;
+}
+
+.pic
+{
+width: 80%;
+height: 450px;
+margin-left: 26px;
+border-radius: 10px;
+box-shadow: 10px 10px 10px rgb(186, 194, 183);
+}
+
+#card ul li{
+
+    color: white; 
+    list-style: none;
+    padding: 8px;
+    font-size: 21px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#ul li a:{color: white;}
+
+
+
+</style>
+
+
+<body>
+
+
+    <h1 style="margin-left: 170px;"> Jquery fade work</h1>
+
+    <div id="card">
+        <img class="pic" src="image/v1.jpg">
+
+
+    <ul id="text">
+        
+        <h2 style="color:rgb(25, 149, 73); font-size: 32px; text-align: center; cursor: pointer;">Details</h2>
+           
+    <h2 style="color: white; font-size: 32px; text-align: center; cursor: pointer;">Money Tree Plant</h2>
+                 
+    <li>Price : 425 RS</li>
+    <li>Plant : Outdoor</li>
+    <button style="width: 55%; height: 35px; border-radius: 4px; background-color: rgb(25, 149, 73); color: white;padding: 5px; font-size: 17px; margin-left: 110px; cursor: pointer; border: 2px rgb(18, 148, 27) solid;">View Plant....</button>
+    
+
+    </ul>
+
+
+
+
+    <script>
+
+$(document).ready(function()
+{
+
+    $(".pic").fadeOut(3000)
+
+    $(".pic").fadeTo(1000)
+
+
+
+})
+
+
+
+
+    </script>
+
+      
+
+    </div>
+
+    
+
+
+
+
+    
+
+</body>
+</html>
