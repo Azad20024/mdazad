@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+    #pic1
+    {
+          width: 18%;
+          left:-300px;
+          position: relative;
+          transition: 3s;
+    }
+
+
+    #pic2
+    {
+          width: 18%;
+          top:-300px;
+          position: relative;
+          transition: 4s;
+
+    }
+          
+
+
+
+</style>
+<body>
+
+    <img id="pic1" src="image/bird.png">
+    
+    <img id="pic2" src="image/eagle.png">
+    
+    
+
+<script>
+
+        $(document).ready(function()
+    {
+       $("#pic1").animate({left:"300px"},1000)
+
+       $("#pic1").animate({top:"500px"},3000)
+
+       $("#pic2").animate({left:"300px"},3000)
+
+       $("#pic2").animate({top:"500px"},1000)
+
+       $("#pic2").animate({padding:"10px"},1000),function(){
+        document.getElementById("#pic2").style.color="red"
+       }
+
+
+    })
+
+
+
+    
+    </script>
+</body>
+</html>
